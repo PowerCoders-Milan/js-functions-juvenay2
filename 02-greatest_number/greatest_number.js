@@ -8,19 +8,23 @@
 // call the function passing the numbers as arguments
 //call the function inside the ${...}
 
-let number1 = Math.ceil(Math.random()*100);
-let number2 = Math.ceil(Math.random()*100);
-let number3 = Math.ceil(Math.random()*100);
 
-const greatestNumber=(x,y,z) => {
-    if (number1>number2){
-        return(number1);
-    }
-    else if (number2>number1){
-        return(number2);
-    }
-    else{
-        return(number3);
+const greatestNumber=(number1,number2,number3) => {
+    
+    if (number1>number2 && number1>number3) {
+        return number1;
+    } else if (number2>number1 && number2>number3) {
+        return number2;
+    } else {
+        return number3;
     }
 }
-console.log(`${number1,number2,number3} is the greatest number`); 
+
+let number1 = Math.ceil(Math.random()*10);
+let number2 = Math.ceil(Math.random()*10);
+let number3 = Math.ceil(Math.random()*10);
+
+console.log(number1);
+console.log(number2);
+console.log(number3);
+console.log(`${greatestNumber(number1,number2,number3)} is the greatest number`); 
