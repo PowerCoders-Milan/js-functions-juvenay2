@@ -6,7 +6,7 @@ function multiplyByNineFifths(number){
 // define a function getFahrenheit(celsius)
 function getFahrenheit (celsius){
     return multiplyByNineFifths(celsius) + 32;
-}
+}  
 
 console.log(getFahrenheit(32));  
 
